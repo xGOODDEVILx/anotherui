@@ -21,11 +21,11 @@
     ]
   },
   "dependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "class-variance-authority": "0.7.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
     "rollup": "4.25.0"
   },
   "perDependencies": {
@@ -37,6 +37,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.2",
     "@eslint/js": "9.13.0",
+    "@fullstacksjs/eslint-config": "^11.4.0",
     "@rollup/plugin-commonjs": "28.0.1",
     "@rollup/plugin-node-resolve": "15.3.0",
     "@rollup/plugin-typescript": "12.1.1",
