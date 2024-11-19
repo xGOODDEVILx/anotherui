@@ -1,16 +1,15 @@
 {
-	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
-	"version": "0.2",
-	"words": [
-		"clsx",
-		"tailwindcss",
-		"tsbuildinfo",
-		"tseslint",
-		"typecheck"
-	],
-	"language": "en",
-	"ignorePaths": [
-		"node_modules",
-		"pnpm-lock.yaml"
-	]
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "words": [
+    "clsx",
+    "fullstacksjs",
+    "mobily",
+    "tailwindcss",
+    "tsbuildinfo",
+    "tseslint",
+    "typecheck"
+  ],
+  "language": "en",
+  "ignorePaths": ["node_modules", "pnpm-lock.yaml"]
 }

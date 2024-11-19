@@ -1,1 +1,1 @@
-e
+export { bgColorTokens } from './bgTokens';
