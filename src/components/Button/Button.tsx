@@ -1,9 +1,6 @@
 'use client';
 
-
 export const Button = () => {
-
-  console.log("Hi there")
-  return <button>Button</button>
-    
-}
+  console.log('Hi there');
+  return <button>Button</button>;
+};
