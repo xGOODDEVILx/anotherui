@@ -1,1 +1,2 @@
-export {colorPrimitives} from './colorPrimitives'
+export { colorPrimitives } from './colorPrimitives';
+export { textSizePrimitives } from './textSizePrimitives';

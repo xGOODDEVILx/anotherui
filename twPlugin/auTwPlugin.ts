@@ -4,7 +4,12 @@ import { F } from '@mobily/ts-belt';
 import twAnimate from 'tailwindcss-animate';
 import plugin from 'tailwindcss/plugin';
 
-import { bgColorTokens } from './tokens';
+import {
+  bgColorTokens,
+  radiusTokens,
+  textColorTokens,
+  textSizeTokens,
+} from './tokens';
 
 const config = {
   content: [],
@@ -12,6 +17,9 @@ const config = {
   theme: {
     extend: {
       backgroundColor: bgColorTokens,
+      borderRadius: radiusTokens,
+      textColor: textColorTokens,
+      fontSize: textSizeTokens,
     },
   },
 } satisfies Config;
