@@ -14,7 +14,7 @@ export const Primary: Story = {
   
     decorators: [
       () => (
-            <Button/>
+            <Button>Click on Me</Button>
       ),
     ],
   };
