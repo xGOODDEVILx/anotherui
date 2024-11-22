@@ -1,5 +1,6 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from '@storybook/react';
 
+import '../tailwind.config';
 const preview: Preview = {
   parameters: {
     controls: {
@@ -8,6 +9,7 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    layout: 'centered',
   },
 };
 
