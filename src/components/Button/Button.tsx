@@ -2,5 +2,5 @@
 
 export const Button = () => {
   console.log('Hi there');
-  return <button>Button</button>;
+  return <button type="button">Button</button>;
 };
