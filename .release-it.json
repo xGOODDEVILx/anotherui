@@ -12,7 +12,7 @@
     "commitMessage": "Release: v${version}"
   },
   "hooks": {
-    "before:init": ["git pull", "pnpm run typecheck"],
+    "before:init": ["pnpm run typecheck"],
     "after:bump": "pnpm run build"
   }
 }
