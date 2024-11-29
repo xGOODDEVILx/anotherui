@@ -2,7 +2,6 @@
   "name": "another-ui",
   "description": "as the name says, it's another ui library for React built on Tailwind & Shadcn",
   "author": "Gooddevil",
-  "private": true,
   "version": "0.0.2-0",
   "type": "module",
   "main": "./index.js",
