@@ -1,10 +1,21 @@
 {
   "name": "another-ui",
+  "description": "as the name says, it's another ui library for React built on Tailwind & Shadcn",
+  "author": "Gooddevil",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "./index.js",
   "types": "./src/index.d.ts",
+  "keywords": [
+    "anotherUI,React",
+    "Tailwind",
+    "Shadcn",
+    "Learning"
+  ],
+  "repository": {
+    "url": "https://github.com/gooddevil79/anotherui"
+  },
   "scripts": {
     "dev": "storybook dev -p 6006",
     "lint": "eslint ./src --flag unstable_ts_config",
@@ -12,7 +23,8 @@
     "build:storybook": "storybook build",
     "build": "rollup -c",
     "spellcheck": "cspell *",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "release": "release-it"
   },
   "baseUrl": ".",
   "path": {
@@ -20,6 +32,7 @@
       "src/*"
     ]
   },
+  "license": "MIT",
   "dependencies": {
     "@mobily/ts-belt": "^3.13.1",
     "@radix-ui/react-slot": "^1.1.0",
@@ -70,6 +83,8 @@
     "globals": "15.11.0",
     "postcss": "8.4.49",
     "prettier": "3.3.3",
+    "release-it": "^17.10.0",
+    "release-it-pnpm": "^4.6.3",
     "rollup-plugin-copy": "3.5.0",
     "rollup-plugin-delete": "2.1.0",
     "rollup-plugin-postcss": "4.0.2",
