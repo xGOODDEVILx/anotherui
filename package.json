@@ -6,6 +6,10 @@
   "type": "module",
   "main": "./index.js",
   "types": "./src/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
   "keywords": [
     "anotherUI,React",
     "Tailwind",

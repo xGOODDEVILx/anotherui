@@ -1,12 +1,8 @@
-Here’s a **README.md** file for your `anotherUI` project:
+# AnotherUI
 
----
+AnotherUI is a UI component library built on top of **Shadcn** and **Tailwind CSS**. This project is designed only for learning purpose and it's open to contributions for people like me who want to learn how implement a simple library with React.
 
-# anotherUI
-
-A modern UI component library built with **Vite**, **pnpm**, and **Tailwind CSS**. This project is designed to be developer-friendly, customizable, and open to contributions.
-
-## Table of Contents
+## Table of Contents 📃
 
 - [Folder Structure](#folder-structure)
 - [Tech Stack](#tech-stack)
@@ -19,7 +15,7 @@ A modern UI component library built with **Vite**, **pnpm**, and **Tailwind CSS*
 
 ---
 
-## Folder Structure
+## Folder Structure 📂
 
 The project structure is organized as follows:
 
@@ -41,7 +37,7 @@ The project structure is organized as follows:
 
 ---
 
-## Tech Stack
+## Tech Stack ⚙️
 
 - **Vite**: Build tool for fast and optimized development.
 - **pnpm**: Efficient package manager for monorepos.
@@ -49,7 +45,7 @@ The project structure is organized as follows:
 
 ---
 
-## Prerequisites
+## Prerequisites 🛒
 
 To work on or use this project, ensure you have:
 
@@ -66,7 +62,7 @@ To work on or use this project, ensure you have:
 
 ---
 
-## Installation
+## Installation 💾
 
 1. Clone the repository:
 
@@ -88,7 +84,7 @@ To work on or use this project, ensure you have:
 
 ---
 
-## Using anotherUI in Your Project
+## Using anotherUI in Your Project ⛓️‍💥
 
 To integrate this library into your project:
 
@@ -120,9 +116,9 @@ To integrate this library into your project:
 
 ---
 
-## Contributing
+## Contributing 🤝
 
-We welcome contributions from the community! Follow these steps to get started:
+As I mentioned, This is a personal project, but I welcome contributions from the community! Follow these steps to get started:
 
 1. **Fork the Repository**:
 
@@ -132,7 +128,7 @@ We welcome contributions from the community! Follow these steps to get started:
 
    - Create a branch for your changes:
      ```bash
-     git checkout -b feature/your-branch-name
+     git checkout -b your-branch-name
      ```
 
 3. **Make Changes**:
@@ -143,7 +139,7 @@ We welcome contributions from the community! Follow these steps to get started:
 
    - Push your branch:
      ```bash
-     git push origin feature/your-branch-name
+     git push origin your-branch-name
      ```
    - Create a Pull Request (PR) to the `main` branch of the original repository.
 
@@ -152,7 +148,7 @@ We welcome contributions from the community! Follow these steps to get started:
 
 ---
 
-## Commit Guidelines
+## Commit Guidelines 🏷️
 
 Follow these commit message conventions (present tense, Linux style):
 
@@ -171,9 +167,11 @@ Follow these commit message conventions (present tense, Linux style):
 - **Introduce**: For introducing new patterns, plugins, or systems.  
   Example: `Introduce new token system in twPlugin`
 
+and so on...
+
 ---
 
-## Design Tokens
+## Design Tokens 🎨
 
 The `twPlugin` directory includes:
 
