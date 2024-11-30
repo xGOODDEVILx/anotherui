@@ -5,7 +5,7 @@ export const getButtonClasses = cva(
   {
     defaultVariants: {
       size: 'md',
-      variant: 'default',
+      color: 'default',
       shape: 'normal',
       mode: 'default',
     },
@@ -13,20 +13,14 @@ export const getButtonClasses = cva(
       size: {
         md: 'h-10  px-2 py-1 text-base',
         lg: 'h-12  px-3 py-2 text-lg',
-        sm: 'h-7 rounded-xl px-1 py-0.5 text-xs',
+        sm: 'h-8 rounded-xl p-1 text-xs',
       },
-      variant: {
-        default:
-          'bg-brand text-brand-fg hover:bg-brand-medium/90 focus-visible:ring-primary',
-        outline: 'border-2 border-brand text-brand focus-visible:ring-primary',
-        'outline-danger':
-          'border-2 border-danger text-danger hover:bg-danger hover:text-danger-fg focus-visible:ring-primary',
-        'outline-success':
-          'border-2 border-success text-success hover:bg-success hover:text-success-fg focus-visible:ring-primary',
-        ghost: 'focus-visible:ring-primary',
-        link: 'underline-offset-4 hover:underline',
-        danger: 'bg-danger text-danger-fg',
-        success: 'bg-success text-success-fg underline-offset-4',
+      color: {
+        default: 'bg-brand',
+        ghost: 'border-none',
+        link: 'border-none text-info underline-offset-4 hover:underline',
+        danger: 'bg-danger text-danger-fg hover:bg-danger/90',
+        success: 'bg-success',
       },
       shape: {
         pill: 'rounded-au-full',
@@ -34,19 +28,36 @@ export const getButtonClasses = cva(
       },
       mode: {
         default: '',
-        'icon-only': 'size-10 p-0',
+        outline: 'border-2 bg-transparent',
       },
     },
     compoundVariants: [
       {
-        mode: 'icon-only',
-        size: 'lg',
-        className: 'size-12',
+        mode: 'outline',
+        color: 'default',
+        className: 'border-brand text-brand hover:bg-brand hover:text-brand-fg',
       },
       {
-        mode: 'icon-only',
-        size: 'sm',
-        className: 'size-8',
+        mode: 'default',
+        color: 'default',
+        className: ' text-brand-fg  hover:bg-brand-medium/90',
+      },
+      {
+        mode: 'outline',
+        color: 'danger',
+        className:
+          'border-danger !text-danger hover:!bg-danger hover:!text-danger-fg',
+      },
+      {
+        mode: 'outline',
+        color: 'success',
+        className:
+          'border-success text-success hover:bg-success hover:text-success-fg',
+      },
+      {
+        mode: 'default',
+        color: 'success',
+        className: 'bg-success text-success-fg hover:bg-success/90',
       },
     ],
   }

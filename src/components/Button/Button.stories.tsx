@@ -11,30 +11,21 @@ const meta: Meta<typeof Button> = {
     children: 'Click Me',
   },
   argTypes: {
-    variant: {
-      control: 'select',
-      options: [
-        'default',
-        'outline',
-        'outline-danger',
-        'outline-success',
-        'ghost',
-        'link',
-        'danger',
-        'success',
-      ],
+    color: {
+      control: 'inline-radio',
+      options: ['default', 'ghost', 'link', 'danger', 'success'],
     },
     size: {
       control: 'select',
       options: ['sm', 'md', 'lg'],
     },
     shape: {
-      control: 'select',
+      control: 'inline-radio',
       options: ['normal', 'pill'],
     },
     mode: {
       control: 'inline-radio',
-      options: ['default', 'icon-only'],
+      options: ['default', 'outline'],
     },
   },
 };
@@ -43,7 +34,7 @@ export default meta;
 
 export const Default: Story = {
   args: {
-    variant: 'default',
+    color: 'default',
     size: 'md',
     shape: 'normal',
     mode: 'default',
@@ -61,7 +52,7 @@ export const Default: Story = {
 
 export const Danger: Story = {
   args: {
-    variant: 'danger',
+    color: 'danger',
     size: 'md',
     shape: 'normal',
     mode: 'default',
@@ -79,7 +70,7 @@ export const Danger: Story = {
 
 export const Success: Story = {
   args: {
-    variant: 'success',
+    color: 'success',
     size: 'md',
     shape: 'normal',
     mode: 'default',
@@ -97,7 +88,7 @@ export const Success: Story = {
 
 export const Ghost: Story = {
   args: {
-    variant: 'ghost',
+    color: 'ghost',
   },
   decorators: [
     (_story, context) => (
@@ -112,7 +103,7 @@ export const Ghost: Story = {
 
 export const Link: Story = {
   args: {
-    variant: 'link',
+    color: 'link',
   },
   decorators: [
     (_story, context) => (
@@ -127,7 +118,8 @@ export const Link: Story = {
 
 export const OutLine: Story = {
   args: {
-    variant: 'outline',
+    color: 'default',
+    mode: 'outline',
   },
   decorators: [
     (_story, context) => (
@@ -142,7 +134,8 @@ export const OutLine: Story = {
 
 export const OutLineDanger: Story = {
   args: {
-    variant: 'outline-danger',
+    color: 'danger',
+    mode: 'outline',
   },
   decorators: [
     (_story, context) => (
@@ -154,11 +147,11 @@ export const OutLineDanger: Story = {
     ),
   ],
 };
-
 
 export const OutLineSuccess: Story = {
   args: {
-    variant: 'outline-success',
+    color: 'success',
+    mode: 'outline',
   },
   decorators: [
     (_story, context) => (
@@ -171,91 +164,53 @@ export const OutLineSuccess: Story = {
   ],
 };
 
-
-export const IconOnly: Story = {
+export const WithIcon: Story = {
   args: {
-    variant: 'default',
-    size: 'md',
-    shape: 'normal',
+    color: 'default',
+    mode: 'default',
   },
   decorators: [
     (_story, context) => (
       <div className="space-x-2">
-        <Button
-          {...context.args}
-          size="sm"
-          mode="icon-only"
-          prefixIcon={<User2 />}
-        />
-        <Button
-          {...context.args}
-          size="md"
-          mode="icon-only"
-          prefixIcon={<User2 />}
-        />
-        <Button
-          {...context.args}
-          size="lg"
-          mode="icon-only"
-          prefixIcon={<User2 />}
-        />
+        <Button {...context.args} size="sm" prefixIcon={<User2 />} />
+        <Button {...context.args} size="md" prefixIcon={<User2  />} />
+        <Button {...context.args} size="lg" prefixIcon={<User2 />} />
       </div>
     ),
   ],
 };
-
-
 
 export const Loading: Story = {
   args: {
-    variant: 'default',
+    color: 'default',
     size: 'md',
     shape: 'normal',
-    loading:true
+    loading: true,
   },
   decorators: [
     (_story, context) => (
       <div className="flex items-center space-x-2">
-        <Button
-          {...context.args}
-          size="sm"
-        />
-        <Button
-          {...context.args}
-          size="md"
-        />
-        <Button
-          {...context.args}
-          size="lg"
-        />
+        <Button {...context.args} size="sm" />
+        <Button {...context.args} size="md" />
+        <Button {...context.args} size="lg" />
       </div>
     ),
   ],
 };
 
-
 export const Disabled: Story = {
   args: {
-    variant: 'default',
+    color: 'default',
     size: 'md',
     shape: 'normal',
-    disabled:true
+    disabled: true,
   },
   decorators: [
     (_story, context) => (
       <div className="flex items-center space-x-2">
-        <Button
-          {...context.args}
-          size="sm"
-        />
-        <Button
-          {...context.args}
-          size="md"
-        />
-        <Button
-          {...context.args}
-          size="lg"
-        />
+        <Button {...context.args} size="sm" />
+        <Button {...context.args} size="md" />
+        <Button {...context.args} size="lg" />
       </div>
     ),
   ],
