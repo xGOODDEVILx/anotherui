@@ -5,11 +5,15 @@
     "clsx",
     "fullstacksjs",
     "mobily",
+    "Shadcn",
     "tailwindcss",
     "tsbuildinfo",
     "tseslint",
     "typecheck"
   ],
   "language": "en",
-  "ignorePaths": ["node_modules", "pnpm-lock.yaml"]
+  "ignorePaths": [
+    "node_modules",
+    "pnpm-lock.yaml"
+  ]
 }
