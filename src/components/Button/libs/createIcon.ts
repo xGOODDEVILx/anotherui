@@ -11,9 +11,9 @@ const classes = cva('shrink-0', {
   },
   variants: {
     size: {
-      lg: 'size-6',
-      md: 'size-5',
-      sm: 'size-4 stroke-[2.3px]',
+      lg: '!size-6',
+      md: '!size-5',
+      sm: '!size-4 !stroke-[2.3px]',
     },
   },
 });
@@ -33,12 +33,7 @@ export const createIcon = (
     // eslint-disable-next-line @eslint-react/no-clone-element
     return cloneElement(node, {
       ...node.props,
-      className: cn(
-        'text-inherit',
-        classes({ size }),
-        className,
-        node.props.className
-      ),
+      className: cn(classes({ size }), className, node.props.className),
     });
   }
 

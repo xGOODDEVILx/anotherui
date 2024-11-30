@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 
-export const getButtonClasses = cva(
+export const getIconButtonClasses = cva(
   'inline-flex items-center justify-center gap-1 whitespace-nowrap font-medium ring-offset-brand transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-60 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
   {
     defaultVariants: {
@@ -11,9 +11,9 @@ export const getButtonClasses = cva(
     },
     variants: {
       size: {
-        md: 'h-10  px-2 py-1 text-base',
-        lg: 'h-12  px-3 py-2 text-lg',
-        sm: 'h-8 rounded-xl p-1 text-xs',
+        md: 'size-10  px-2 py-1 text-base',
+        lg: 'size-12  px-3 py-2 text-lg',
+        sm: 'size-8 rounded-xl p-1 text-xs',
       },
       color: {
         default: 'bg-brand',
@@ -23,7 +23,7 @@ export const getButtonClasses = cva(
         success: 'bg-success',
       },
       shape: {
-        pill: 'rounded-au-full',
+        pill: '!rounded-au-full',
         normal: 'rounded-au',
       },
       mode: {
