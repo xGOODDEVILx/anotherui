@@ -1,3 +1,4 @@
+/* eslint-disable n/no-unpublished-import */
 import type { Preview } from '@storybook/react';
 
 import './tailwind.css';
