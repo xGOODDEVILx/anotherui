@@ -10,19 +10,19 @@ import postcss from 'rollup-plugin-postcss';
  */
 
 export default {
-  input: ['./src/index.ts'],
-  external: ['react', 'react-dom'],
+  external: ['react', 'react-dom', 'react/jsx-runtime'],
+  input: ['./src/index.ts', './twPlugin/auTwPlugin.ts'],
   output: [{ dir: './dist/', format: 'esm', sourcemap: true }],
   plugins: [
     del({ targets: 'dist/*' }),
     resolve(),
     commonjs(),
+    typescript({ tsconfig: './tsconfig.json' }),
     postcss({
       minimize: true,
       extract: true,
       sourceMap: true,
     }),
-    typescript(),
     copy({
       targets: [{ src: './package.json', dest: 'dist/' }],
     }),
