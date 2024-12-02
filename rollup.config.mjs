@@ -17,12 +17,12 @@ export default {
     del({ targets: 'dist/*' }),
     resolve(),
     commonjs(),
+    typescript({ tsconfig: './tsconfig.json' }),
     postcss({
       minimize: true,
       extract: true,
       sourceMap: true,
     }),
-    typescript(),
     copy({
       targets: [{ src: './package.json', dest: 'dist/' }],
     }),
