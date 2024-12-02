@@ -1,6 +1,6 @@
 # AnotherUI
 
-AnotherUI is a UI component library built on top of **Shadcn** and **Tailwind CSS**. This project is designed only for learning purpose and it's open to contributions for people like me who want to learn how implement a simple library with React.
+AnotherUI is a UI component library built on top of **Shadcn** and **Tailwind CSS**. This project is designed only for learning purposes, and it's open to contributions for people like me who want to learn how to implement a simple library with React.
 
 ## Table of Contents 📃
 
@@ -40,8 +40,12 @@ The project structure is organized as follows:
 ## Tech Stack ⚙️
 
 - **Vite**: Build tool for fast and optimized development.
-- **pnpm**: Efficient package manager for monorepos.
+- **Rollup**: Module bundler for creating optimized builds.
+- **pnpm**: Efficient package manager.
+- **Shadcn**: Modular component library built on Tailwind CSS.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Storybook**: Tool for developing and testing UI components in isolation.
+- **ts-belt**: A collection of TypeScript utilities for type-safe and reusable code.
 
 ---
 
@@ -94,25 +98,24 @@ To integrate this library into your project:
    pnpm install another-ui
    ```
 
-2. Import the components you need:
+2. Add Tailwind CSS configuration from `another-ui plugin` to your `tailwind.config.js` for design consistency:
+
+   ```js
+   import { auTwPlugin } from 'another-ui/auTwPlugin';
+
+   export const config = {
+     content: ['./node_modules/another-ui/**/*.js'],
+     plugins: [auTwPlugin],
+   };
+   ```
+
+3. Import the components you need :
 
    ```tsx
    import { Button } from 'another-ui';
    ```
 
-3. Add Tailwind CSS configuration from `twPlugin/tokens` to your `tailwind.config.js` for design consistency:
-
-   ```js
-   const anotherUIConfig = require('another-ui/twPlugin/tokens');
-
-   module.exports = {
-     content: ['./src/**/*.{js,jsx,ts,tsx}'],
-     theme: {
-       extend: anotherUIConfig,
-     },
-     plugins: [anotherUIPlugin],
-   };
-   ```
+4. There is no step 4, Happy Coding :D
 
 ---
 
@@ -173,15 +176,24 @@ and so on...
 
 ## Design Tokens 🎨
 
-The `twPlugin` directory includes:
+The `auTwPlugin` directory includes:
 
 - **Primitives**: Core values (e.g., colors, spacings) used to build the theme.
 - **Tokens**: High-level design tokens for typography, color schemes, etc.
+
+> These color tokens are from the **FullstacksJS** community, and I have their permission to use them.
 
 These tokens ensure a consistent design language across components. They can be extended or overridden based on project needs.
 
 ---
 
-Feel free to explore, contribute, and customize `anotherUI` to build amazing user interfaces!
+## FullstacksJS Community 🌟
 
----
+**FullstacksJS** is an open-source community focused on knowledge sharing, exploring, and enhancing developer experience. The primary objective of this community is to establish a professional environment for in-depth content in the software development and engineering field.
+
+To promote and strengthen the culture of open-source development and contribution, all projects developed within this community are entirely open source, and members are encouraged to participate.
+
+> _We grow together._
+
+- **Website**: [https://fullstacksjs.com/](https://fullstacksjs.com/)
+- **GitHub**: [https://github.com/fullstacksjs](https://github.com/fullstacksjs)
