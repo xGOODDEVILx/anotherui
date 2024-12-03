@@ -1,3 +1,5 @@
+export { Accordion } from './components/Accordion';
+
 export {
   Button,
   type ButtonProps,
