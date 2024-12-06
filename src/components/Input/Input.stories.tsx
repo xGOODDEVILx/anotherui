@@ -7,7 +7,6 @@ const meta: Meta<typeof Input> = {
   title: 'Input',
   component: Input,
   args: {
-    children: 'Click Me',
   },
   argTypes: {
     
