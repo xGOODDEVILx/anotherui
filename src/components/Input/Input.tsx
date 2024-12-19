@@ -7,9 +7,9 @@ import { forwardRef, type ReactNode } from 'react';
 import { createIcon } from './libs/createIcon';
 import { getInputClasses } from './libs/getInputClasses';
 
-type InputVariants = VariantProps<typeof getInputClasses>;
+export type InputVariants = VariantProps<typeof getInputClasses>;
 
-type InputProps = React.ComponentProps<'input'> & {
+export type InputProps = React.ComponentProps<'input'> & {
   prefixIcon?: ReactNode;
   suffixIcon?: ReactNode;
   containerClassName?: string;

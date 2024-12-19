@@ -8,3 +8,5 @@ export {
   type IconButtonProps,
   type IconButtonVariants,
 } from './components/Button';
+
+export { Input, type InputProps, type InputVariants } from './components/Input';
