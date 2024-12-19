@@ -5,7 +5,7 @@ import { User2 } from 'lucide-react';
 export type Story = StoryObj<typeof Button>;
 
 const meta: Meta<typeof Button> = {
-  title: 'Button',
+  title: 'Components/Button',
   component: Button,
   args: {
     children: 'Click Me',

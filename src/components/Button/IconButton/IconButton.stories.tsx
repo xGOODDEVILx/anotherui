@@ -5,7 +5,7 @@ import { User2 } from 'lucide-react';
 export type Story = StoryObj<typeof IconButton>;
 
 const meta: Meta<typeof IconButton> = {
-  title: 'Icon Button',
+  title: 'Components/Icon Button',
   component: IconButton,
   argTypes: {
     color: {

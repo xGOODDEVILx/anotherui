@@ -2,47 +2,47 @@ import { colorPrimitives } from '../primitives';
 
 export const ringColorTokens = {
   surface: {
-    DEFAULT: `ring-[${colorPrimitives.gray[2]}]`,
-    muted: `ring-[${colorPrimitives.gray[4]}]`,
+    DEFAULT: colorPrimitives.gray[2],
+    muted: colorPrimitives.gray[4],
   },
 
   brand: {
-    DEFAULT: `ring-[${colorPrimitives.gray[3]}]`,
+    DEFAULT: colorPrimitives.gray[3],
   },
 
   success: {
-    DEFAULT: `ring-[${colorPrimitives.green[1]}]`,
+    DEFAULT: colorPrimitives.green[1],
   },
 
   danger: {
-    DEFAULT: `ring-[${colorPrimitives.red[1]}]`,
+    DEFAULT: colorPrimitives.red[1],
   },
 
   warning: {
-    DEFAULT: `ring-[${colorPrimitives.orange[1]}]`,
+    DEFAULT: colorPrimitives.orange[1],
   },
 
   info: {
-    DEFAULT: `ring-[${colorPrimitives.blue[1]}]`,
-    soft: `ring-[${colorPrimitives.blue[2]}]`,
+    DEFAULT: colorPrimitives.blue[1],
+    soft: colorPrimitives.blue[2],
   },
 
   primary: {
-    DEFAULT: `ring-[${colorPrimitives.yellow[1]}]`,
-    muted: `ring-[${colorPrimitives.yellow[3]}]`,
+    DEFAULT: colorPrimitives.yellow[1],
+    muted: colorPrimitives.yellow[3],
   },
 
   light: {
-    DEFAULT: `ring-[${colorPrimitives.white[1]}]`,
+    DEFAULT: colorPrimitives.white[1],
   },
 
   neutral: {
-    DEFAULT: `ring-[${colorPrimitives.neutral[2]}]`,
-    soft: `ring-[${colorPrimitives.neutral[1]}]`,
+    DEFAULT: colorPrimitives.neutral[2],
+    soft: colorPrimitives.neutral[1],
   },
 
   dark: {
-    DEFAULT: `ring-[${colorPrimitives.black[2]}]`,
-    muted: `ring-[${colorPrimitives.black[1]}]`,
+    DEFAULT: colorPrimitives.black[2],
+    muted: colorPrimitives.black[1],
   },
 };
