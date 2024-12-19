@@ -23,6 +23,7 @@ const config = {
       borderColor: bgColorTokens,
       fontSize: textSizeTokens,
       ringColor: ringColorTokens,
+      stroke: textColorTokens,
       ringOffsetColor: ringColorTokens,
     },
   },
