@@ -6,14 +6,14 @@ AnotherUI is a UI component library built on top of **Shadcn** and **Tailwind CS
 
 ## Table of Contents 📃
 
-- [Installation](#installation-💾)
-- [Contributing](#contributing-🤝)
-  - [Tech Stack](#tech-stack-⚙️)
-  - [Prerequisites](#prerequisites-🛒)
-  - [Folder Structure](#folder-structure-📂)
-  - [Commit Guidelines](#commit-guidelines-🏷️)
-  - [Design Tokens](#design-tokens-🎨)
-  - [FullstacksJS Community](#fullstacksjs-community-🌟)
+- [Installation](#installation)
+- [Contributing](#contributing)
+  - [Tech Stack](#tech-stack)
+  - [Prerequisites](#prerequisites)
+  - [Folder Structure](#folder-structure)
+  - [Commit Guidelines](#commit-guidelines)
+  - [Design Tokens](#design-tokens)
+  - [FullstacksJS Community](#fullstacksjs-community)
 
 ---
 
